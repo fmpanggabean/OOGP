@@ -17,6 +17,6 @@ public class ShootAction : MonoBehaviour, IAction
 
     private GameObject SpawnProjectile()
     {
-        return Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+        return Instantiate(projectilePrefab, anchor.position, anchor.rotation);
     }
 }
